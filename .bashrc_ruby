@@ -1,0 +1,20 @@
+#################
+# Bundle exec
+#################
+function bundle.exec {
+  if [[ -a Gemfile ]]; then
+    bundle exec $*
+  else
+    command $*
+  fi
+}
+
+# Alias commands
+alias cap="bundle.exec cap"
+alias rake="bundle.exec rake"
+alias rails="bundle.exec rails"
+alias guard="bundle.exec guard"
+alias spork="bundle.exec spork"
+alias rspec="bundle.exec rspec"
+alias cucumber="bundle.exec cucumber"
+alias rubocop="bundle.exec rubocop"
