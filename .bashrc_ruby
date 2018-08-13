@@ -1,6 +1,11 @@
-#################
+# Ruby configurations
+#
+# Include in bashrc with something like
+# if [ -f $HOME/.bashrc_ruby ]; then
+#   . $HOME/.bashrc_ruby
+# fi
+
 # Bundle exec
-#################
 function bundle.exec {
   if [[ -a Gemfile ]]; then
     bundle exec $*
