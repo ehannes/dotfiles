@@ -81,9 +81,6 @@ Plugin 'tpope/vim-endwise'
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" Vim plugin for the Elm programming language
-Plugin 'lambdatoast/elm.vim'
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
