@@ -81,6 +81,12 @@ Plugin 'tpope/vim-endwise'
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" Vastly improved Javascript indentation and syntax support in Vim
+Plugin 'pangloss/vim-javascript'
+
+" React JSX syntax highlighting and indenting for vim
+Plugin 'mxw/vim-jsx'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
