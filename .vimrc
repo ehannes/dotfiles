@@ -87,6 +87,9 @@ Plugin 'pangloss/vim-javascript'
 " React JSX syntax highlighting and indenting for vim
 Plugin 'mxw/vim-jsx'
 
+" Prettier is an opinionated code formatter.
+Plugin 'prettier/vim-prettier'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -149,3 +152,11 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 """""""""""""
 " Exclude html tags from indentation
 let g:html_exclude_tags = ['path', 'polygon']
+
+
+""""""""""""
+" Prittier
+""""""""""""
+" Run Prettier without requiring the `@format` doc tag
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
