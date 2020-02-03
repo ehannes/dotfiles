@@ -93,6 +93,9 @@ Plugin 'prettier/vim-prettier'
 " HTML and CSS hi-speed coding
 Plugin 'mattn/emmet-vim'
 
+" Elm plugin for vim
+Plugin 'elmcast/elm-vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
