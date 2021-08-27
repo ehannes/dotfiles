@@ -84,8 +84,11 @@ Plugin 'VundleVim/Vundle.vim'
 " Vastly improved Javascript indentation and syntax support in Vim
 Plugin 'pangloss/vim-javascript'
 
-" React JSX syntax highlighting and indenting for vim
-Plugin 'mxw/vim-jsx'
+" Yet Another TypeScript Syntax
+Plugin 'HerringtonDarkholme/yats.vim'
+
+" vim-jsx-pretty
+Plugin 'maxmellon/vim-jsx-pretty'
 
 " Prettier is an opinionated code formatter.
 Plugin 'prettier/vim-prettier'
@@ -139,7 +142,6 @@ set secure
 
 " Tell vim to ignore uninteresting files
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
-
 
 """""""""""""
 " ctrlp.vim
