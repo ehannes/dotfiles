@@ -167,7 +167,7 @@ let g:html_exclude_tags = ['path', 'polygon']
 """"""""""""
 " Run Prettier without requiring the `@format` doc tag
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html Prettier
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html,*.md Prettier
 
 " max line length that prettier will wrap on
 " Prettier default: 80
