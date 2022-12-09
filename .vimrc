@@ -41,23 +41,17 @@ call vundle#begin()
 " A Vim plugin which shows a git diff in the gutter (sign column) and stages/undoes hunks.
 Plugin 'airblade/vim-gitgutter'
 
-" precision colorscheme for the vim text editor
-Plugin 'altercation/vim-colors-solarized'
+" Color scheme
+Plugin 'sainnhe/everforest'
+
+" A collection of language packs for Vim.
+Plugin 'sheerun/vim-polyglot'
 
 " Full path fuzzy file, buffer, mru, tag, ... finder
 Plugin 'ctrlpvim/ctrlp.vim'
 
 " Cutting-edge vim css syntax file
 Plugin 'JulesWang/css.vim'
-
-" Vim syntax file for scss (Sassy CSS)
-Plugin 'cakebaker/scss-syntax.vim'
-
-" CoffeeScript support for vim
-Plugin 'kchmck/vim-coffee-script'
-
-" HTML5 omnicomplete and syntax
-Plugin 'othree/html5.vim'
 
 " Vim plugin, provides insert mode auto-completion for quotes, parens, brackets, etc.
 Plugin 'Raimondi/delimitMate'
@@ -81,23 +75,11 @@ Plugin 'tpope/vim-endwise'
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" Vastly improved Javascript indentation and syntax support in Vim
-Plugin 'pangloss/vim-javascript'
-
-" Yet Another TypeScript Syntax
-Plugin 'HerringtonDarkholme/yats.vim'
-
-" vim-jsx-pretty
-Plugin 'maxmellon/vim-jsx-pretty'
-
 " Prettier is an opinionated code formatter.
 Plugin 'prettier/vim-prettier'
 
 " HTML and CSS hi-speed coding
 Plugin 'mattn/emmet-vim'
-
-" Elm plugin for vim
-Plugin 'elmcast/elm-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -131,10 +113,27 @@ set relativenumber
 highlight CursorLineNr ctermfg=darkyellow
 highlight LineNr ctermfg=darkgrey
 
-" solarized theme
-" how to enable this correct?
-set background=light
-" colorscheme solarized
+""""""""""""""
+" Colorscheme
+""""""""""""""
+if has('termguicolors')
+	set termguicolors
+endif
+" For dark version.
+set background=dark
+" Set contrast.
+" This configuration option should be placed before `colorscheme everforest`.
+" Available values: 'hard', 'medium'(default), 'soft'
+let g:everforest_background = 'soft'
+" For better performance
+let g:everforest_better_performance = 1
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
+colorscheme everforest
+
+""""""""""""""""""
+" /Colorscheme
+""""""""""""""""""
 
 " Enable project specific configurations
 set exrc

@@ -1,0 +1,7 @@
+# Include in bashrc with something like
+# if [ -f $HOME/.bashrc_tmux ]; then
+#   . $HOME/.bashrc_tmux
+# fi
+
+# tmux italic fix
+export TERM=screen-256color
