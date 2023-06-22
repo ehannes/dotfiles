@@ -76,6 +76,8 @@ Plugin 'VundleVim/Vundle.vim'
 " Prettier is an opinionated code formatter.
 Plugin 'prettier/vim-prettier'
 
+" RSpec runner for Vim
+Plugin 'thoughtbot/vim-rspec'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -141,6 +143,13 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 " Exclude html tags from indentation
 let g:html_exclude_tags = ['path', 'polygon']
 
+let mapleader = ","
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
 
 """"""""""""
 " Prettier
