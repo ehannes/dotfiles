@@ -81,6 +81,7 @@ Plugin 'prettier/vim-prettier'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+set history=1000       " lines of command line history to keep"
 set smartindent
 set shiftwidth=2
 set tabstop=2
