@@ -84,6 +84,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 set history=1000       " lines of command line history to keep"
+set maxmempattern=4000
 set smartindent
 set shiftwidth=2
 set tabstop=2
