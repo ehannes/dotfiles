@@ -157,7 +157,7 @@ map <Leader>a :call RunAllSpecs()<CR>
 """"""""""""
 " Run Prettier without requiring the `@format` doc tag
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html,*.md Prettier
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.html Prettier #,*.md *.yaml
 
 " max line length that prettier will wrap on
 " Prettier default: 80
