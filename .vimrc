@@ -207,3 +207,26 @@ let g:prettier#config#prose_wrap = 'always'
 
 " css|strict|ignore
 let g:prettier#config#html_whitespace_sensitivity = 'ignore'
+
+augroup DotenvDetect
+  autocmd!
+  autocmd BufRead,BufNewFile *.env,*.env.*  set filetype=dotenv
+
+  " reset syntax highlighting
+  autocmd BufReadPost *.env,*.env.* set syntax=sh
+augroup END
+
+augroup SecretDetect
+  autocmd!
+  autocmd BufRead,BufNewFile *secret* set filetype=secret
+
+  " reset syntax highlighting
+  autocmd BufReadPost *.yml,*.yaml set syntax=yaml
+augroup END
+
+" Copilot plugin settings (installed via pack)
+let g:copilot_filetypes = {
+  \ '*':      v:true,
+  \ 'dotenv': v:false,
+  \ 'secret': v:false,
+  \ }
