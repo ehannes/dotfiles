@@ -4,5 +4,6 @@
       "Read(**/.env*)",
       "Read(**/kubernetes/**/*secret*)"
     ]
-  }
+  },
+  "alwaysThinkingEnabled": true
 }
