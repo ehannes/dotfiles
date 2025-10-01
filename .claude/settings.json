@@ -2,7 +2,7 @@
   "permissions": {
     "deny": [
       "Read(**/.env*)",
-      "Read(**/kubernetes/*secret*)"
+      "Read(**/kubernetes/**/*secret*)"
     ]
   }
 }
