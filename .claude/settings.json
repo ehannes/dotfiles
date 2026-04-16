@@ -1,9 +1,17 @@
 {
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
   "permissions": {
     "deny": [
       "Read(**/.env*)",
-      "Read(**/kubernetes/**/*secret*)"
+      "Read(**/kubernetes/**/*secret*)",
+      "Read(**/*account-credentials.json)",
+      "Read(**/*token_store.json)"
     ]
   },
-  "alwaysThinkingEnabled": true
+  "alwaysThinkingEnabled": true,
+  "voiceEnabled": true,
+  "preferredNotifChannel": "terminal_bell"
 }
